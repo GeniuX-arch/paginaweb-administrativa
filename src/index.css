@@ -1,0 +1,80 @@
+*{
+  font-family:'IBM Plex Sans';
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration:none;
+}
+.login{
+  margin-top: 200px;
+  height: auto;
+  width: auto;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin:25px;
+
+}
+.form{
+  border-top: 1px solid #ababab  ;
+}
+.login h1{
+  font-size:40px;
+  margin-bottom: 40px;
+
+}
+.login input{
+  margin:10px;
+  width: 400px;
+  height: 50px;
+  font-size:15px;
+  padding-left: 20px;
+  border-radius: 0;
+  border-top:  #f7f7f7;
+  border-left: #f7f7f7;
+  border-right: #f7f7f7;
+  background-color: #f7f7f7;
+}
+.login input:hover{
+  border-color: #0353E9;
+}
+
+.login input:focus{
+  outline: 0;
+  border-color:#0353E9;
+  transition: 5s;
+}
+
+.login button{
+  width: 420px;
+  height: 50px;
+  color: white;
+  font-size: 20;
+  text-align: left;
+  padding-left:20px ;
+  background-color: #0353E9; 
+  margin:#0353E9;
+  border:#fff;
+
+}
+
+.login button:hover{
+  background-color: #0449c9; 
+  cursor: pointer;
+}
+.login .error {
+
+  color:red;
+  text-align: left;
+  font-size: 15px;
+}
