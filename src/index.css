@@ -6,8 +6,46 @@
 a{
   text-decoration:none;
 }
+nav{
+  background-color: red;
+  display: flex;  
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+ul{
+  display: flex;  
+  
+  flex-direction: row-reverse;
+  flex-wrap: wrap; 
+}
+li{
+  text-decoration: none;
+  padding: 10px;
+  border:1px solid black;
+  list-style-type: none;
+
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+.padre{
+  display: flex;  
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+.revisar{
+  width: 20%;
+  background-color:black ;
+}
+.informes{
+  width: 20%;
+}
+
 .login{
-  margin-top: 200px;
+  margin-top: 7%;
   height: auto;
   width: auto;
   display:flex;

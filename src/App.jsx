@@ -184,9 +184,15 @@ function HomeGerente(){
   return(
     <div>
       <NavbarGerente />
-      <div>
-        <p>Hola bienvenido {datos}</p>
-        <p>tienes 4646 informes por revisar</p>
+      <div className="padre">
+        <div clasName="revisar">
+          <p>Hola bienvenido {datos}</p>
+          <p>tienes 4646 informes por revisar</p>
+        </div>
+        <div clasName="informes">
+          <h1>Informes</h1>
+          <p>Descripcion infomres</p>
+        </div>
       </div>
     </div>
   )
