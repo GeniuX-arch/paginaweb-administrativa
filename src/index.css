@@ -1,44 +1,49 @@
-*{
-  font-family:'IBM Plex Sans';
-  margin: 0;
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+p, h1, h2, label{
+  font-family: 'IBM Plex Sans' ;
 }
+
+/*
 a{
   text-decoration:none;
 }
 nav{
-  background-color: red;
   display: flex;  
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap; 
+  border-bottom: 1px solid rgb(219, 219, 219);
 }
 ul{
   display: flex;  
-  
   flex-direction: row-reverse;
   flex-wrap: wrap; 
 }
 li{
   text-decoration: none;
-  padding: 10px;
-  border:1px solid black;
+  padding: 20px 0;
   list-style-type: none;
+  
 
+}
+li:hover{
+ background-color: #ababab; 
 }
 a{
   color:black;
+  padding: 20px;
   text-decoration: none;
 }
 .padre{
   display: flex;  
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap; 
 }
 .revisar{
   width: 20%;
-  background-color:black ;
 }
 .informes{
   width: 20%;
@@ -71,7 +76,7 @@ a{
   margin-bottom: 40px;
 
 }
-.login input{
+//.login input{
   margin:10px;
   width: 400px;
   height: 50px;
@@ -83,11 +88,11 @@ a{
   border-right: #f7f7f7;
   background-color: #f7f7f7;
 }
-.login input:hover{
+//.login input:hover{
   border-color: #0353E9;
 }
 
-.login input:focus{
+//.login input:focus{
   outline: 0;
   border-color:#0353E9;
   transition: 5s;
@@ -116,3 +121,5 @@ a{
   text-align: left;
   font-size: 15px;
 }
+
+*/
