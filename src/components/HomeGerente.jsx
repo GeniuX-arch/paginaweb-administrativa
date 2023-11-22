@@ -11,20 +11,20 @@ export default function HomeGerente(){
   const [itemSelect, setItemSelect] = useState(0);
   console.log(itemSelect)
   return(
-    <div>
+    <div className="bg-slate-800 text-white ">
       <NavbarGerente />
       <div className="mx-32 flex flex-col font-custom  justify-center">
         <div className="p-4 m-1 items-center">
             <h1 className="font-bold text-lg">Listado de proyectos</h1>
         </div>
         <div className="flex flex-row">
-        <div className="w-4/5 flex flex-wrap flex-row h-10">
+        <div className="w-9/12 flex flex-wrap flex-row h-10">
          {proyectos.map((value, index) => {
             const click = (index)=>{
                 setItemSelect(index)
             }
             return (
-            <div key={index} className="flex w-3/12 flex-col m-5 border p-5 hover:cursor-pointer" onClick={()=> click(index)}>
+            <div key={index} className="flex w-3/12 flex-col m-5 border border-slate-700 p-5 hover:cursor-pointer bg-slate-900 rounded-md" onClick={()=> click(index)}>
                <h1 className="font-bold" >{value.nombre}</h1>
                <p className="truncate">{value.descripcion}</p>
             </div>
@@ -32,11 +32,10 @@ export default function HomeGerente(){
          })}
         </div>
 
-        <div className="flex w-1/5 ">
+        <div className="flex w-3/12  bg-slate-900 p-5 rounded-lg border border-slate-700">
           <div className="flex flex-col">
-            <Link className="bg-blue-600 text-white w-2/3 px-4 py-3 text-center" to={'/tareas/'+itemSelect}>mas detalles</Link>
-            <h1 className="font-bold">{proyectos[itemSelect].nombre}</h1>
-            <p>{proyectos[itemSelect].descripcion}</p>
+            <Link className="bg-purple-600 text-white w-auto px-3 py-1 text-center mb-5" to={'/tareas/'+itemSelect}>Ver más detalles</Link>
+            <h1 className="font-bold mb-3">{proyectos[itemSelect].nombre}</h1>
             <h1 className="font-bold">gerente:</h1>
           {empleados.map((value, index) => {
               if(value.cargo=='gerente' && value.proyecto==itemSelect+1){
@@ -60,6 +59,8 @@ export default function HomeGerente(){
               }
           })}
           </ul>
+          <h1 className="font-bold mb-2">Descripción:</h1>
+            <p>{proyectos[itemSelect].descripcion}</p>
          </div>
 
         </div>

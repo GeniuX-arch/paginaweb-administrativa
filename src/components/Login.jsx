@@ -33,16 +33,16 @@ export default function Login(){
 
         <div className='flex flex-col items-center justify-between mt-11'>
         <label htmlFor="usuario" >Cedula</label>
-        <input type="text" name='usuario' placeholder='Usuario' className='border  border-gray-300 focus:outline-none focus:border-b-2 focus:border-b-blue-600 py-3 px-6 w-1/3' value={usuario} onChange={(e)=>setUsuario(e.target.value)} required/>
+        <input type="text" name='usuario' placeholder='Usuario' className='border  border-gray-300 focus:outline-none focus:border-b-2 focus:border-b-purple-700 py-3 px-6 w-1/3 text-black' value={usuario} onChange={(e)=>setUsuario(e.target.value)} required/>
         </div>
         <div className='flex flex-col items-center justify-between mt-11'>
         <label htmlFor="pass">Contraseña</label>
-          <input type="password" name="pass" placeholder='Contraseña' value={password} className='border border-gray-300 focus:outline-none focus:border-b-blue-600 focus:border-b-2 py-3 px-6 w-1/3' onChange={(e)=>setPassword(e.target.value)} required/>
+          <input type="password" name="pass" placeholder='Contraseña' value={password} className='border border-gray-300 focus:outline-none focus:border-b-purple-700 focus:border-b-2 py-3 px-6 w-1/3 text-black' onChange={(e)=>setPassword(e.target.value)} required/>
 
         <p className="text-red-500">{error}</p>
         </div>
         <div className='itemitemss-center'>
-            <button type='submit' className='bg-blue-700 text-white px-6 py-3 text-base w-1/3 mt-5 text-left'>Continuar</button>
+            <button type='submit' className='bg-purple-700 text-white px-6 py-3 text-base w-1/3 mt-5 hover:bg-purple-900 text-left'>Continuar</button>
         </div>
 
       </form>

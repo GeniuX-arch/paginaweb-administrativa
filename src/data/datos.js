@@ -140,8 +140,8 @@ const tareas = [
    {
     Titulo: "Programa de tutorías para estudiantes",
     Descripcion: "Implementación de un programa de tutorías como parte del proyecto EducaFuturo.",
-    FechaInicio: "2023-07-01",
-    FechaFin: "2023-08-15",
+    FechaInicio: "2023-03-03",
+    FechaFin: "2023-04-05",
     Proyecto: 1,
     EmpleadoEncargado: 5
   },
@@ -164,8 +164,8 @@ const tareas = [
   {
     Titulo: "Desarrollo de material didáctico interactivo",
     Descripcion: "Creación de material didáctico interactivo para mejorar la enseñanza en el proyecto EducaFuturo.",
-    FechaInicio: "2024-01-01",
-    FechaFin: "2024-02-15",
+    FechaInicio: "2024-04-6",
+    FechaFin: "2024-04-17",
     Proyecto: 1,
     EmpleadoEncargado: 8
   },
@@ -189,8 +189,8 @@ const tareas = [
   {
     Titulo: "Taller de ciencia y tecnología para niños",
     Descripcion: "Organización de talleres interactivos para promover la ciencia y la tecnología en el proyecto EducaFuturo.",
-    FechaInicio: "2024-07-01",
-    FechaFin: "2024-08-15",
+    FechaInicio: "2024-05-18",
+    FechaFin: "2024-05-16",
     Proyecto: 1,
     EmpleadoEncargado: 2
   },
