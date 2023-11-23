@@ -1,9 +1,8 @@
 
 
-import { Route, Routes, Link, Navigate  } from 'react-router-dom'
+import { Route, Routes, Link, Navigate, BrowserRouter } from 'react-router-dom'
 import { ProviderAutenticado, usarIngresado} from './context/infoLogin'
 import { Login,HomeGerente,CrearTarea,Tareas,HomeEmpleado, CrearUsuarios,CrearProyecto } from './components/index'
-import axios from 'axios'
 
   /*const [data, setData] = useState([])
   useEffect(()=>{
@@ -11,8 +10,6 @@ import axios from 'axios'
     .then(res=> setData(res.data))
     .catch(err=>console.log(err));
   },[])*/
-
-
 const ProtectedRouteGerent = ({ children })=>{
   const {esAutenticado, datos} =usarIngresado()
   if(!esAutenticado  && datos[2]!=='gerente'){
@@ -34,8 +31,7 @@ function App() {
         <Route path="/crear-tarea" element={<CrearTarea />} />
         <Route path="/tareas/:id" element={<Tareas />} />
         <Route path="/crear-empleados" element={<CrearUsuarios />} />
-        
-      </Routes>
+        </Routes>
     </div>
   )
 }

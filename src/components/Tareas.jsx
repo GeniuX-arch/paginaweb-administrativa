@@ -30,14 +30,15 @@ export default function Tareas(){
       
       <NavbarGerente />
 
-      <h1 className="ml-10 mt-5"><span className="font-bold">proyecto:</span> {proyectos[numId].nombre}</h1>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mx-32">
 
+      <h1 className="ml-5 my-5 text-xl"> {proyectos[numId].nombre}</h1>
+      <button className="rounded-full bg-green-900 w-10 h-10 text-center">+</button>
       <div className="flex flex-row flex-wrap">      
       {tareasProyecto.map((value,index)=>{
         return(
-        <div key={index} className="h-auto w-3/12 m-10 border border-slate-600 p-3">
+        <div key={index} className="h-auto flex w-3/12 flex-col m-5 border border-slate-700 p-5 bg-slate-900 rounded-md">
           <h1 className="font-bold text-lg mb-2">{value.Titulo}</h1>
           <p className="mb-2"> <span className="font-bold">encargado: </span>
             {
@@ -46,6 +47,10 @@ export default function Tareas(){
           </p>
           <p className="mb-2">{value.Descripcion}</p>
           <p className="text-sm">{value.FechaInicio}  <span className="ml-3">{value.FechaFin}</span></p>
+          <div className="w-auto">
+          <button className="bg-purple-800 w-1/2 hover:bg-purple-900">comentar</button>
+          <button className="bg-red-800 w-1/2 hover:bg-red-900">eliminar</button>
+          </div>
 
         </div>
         )
