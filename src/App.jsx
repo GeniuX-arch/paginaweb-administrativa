@@ -13,7 +13,7 @@ import { Login,HomeGerente,CrearTarea,Tareas,HomeEmpleado, CrearUsuarios,CrearPr
 const ProtectedRouteGerent = ({ children })=>{
   const {esAutenticado, datos} =usarIngresado()
   if(!esAutenticado  && datos[2]!=='gerente'){
-    return <Navigate to='/'/>
+    return <Navigate to='/paginaweb-administrativa'/>
   }
   return children
 }

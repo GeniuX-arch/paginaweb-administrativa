@@ -34,7 +34,7 @@ export default function Tareas(){
       <div className="flex flex-col mx-32">
 
       <h1 className="ml-5 my-5 text-xl"> {proyectos[numId].nombre}</h1>
-      <button className="rounded-full bg-green-900 w-10 h-10 text-center">+</button>
+      <button className="rounded-full bg-green-800 w-10 h-10 text-center hover:bg-green-900">+</button>
       <div className="flex flex-row flex-wrap">      
       {tareasProyecto.map((value,index)=>{
         return(
