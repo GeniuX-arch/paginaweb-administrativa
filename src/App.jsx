@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<ProviderAutenticado><Login /></ProviderAutenticado>} />
+        <Route path="/paginaweb-administrativa" element={<ProviderAutenticado><Login /></ProviderAutenticado>} />
         <Route path="/gerente" element={<ProviderAutenticado><ProtectedRouteGerent >< HomeGerente /></ProtectedRouteGerent></ProviderAutenticado>} />
         <Route path="/empleado" element={<HomeEmpleado />} />
         <Route path="/crear-proyecto" element={<CrearProyecto />} />
