@@ -3,7 +3,8 @@ import NavbarGerente from './NavbarGerente'
 
 export default function CrearProyecto() {
   return (
-        <form  className='flex flex-col items items-center m-12 font-custom'>
+        <form  className='flex flex-col items items-center mb-12 font-custom'>
+          <NavbarGerente />
         <h1 className='mb-16 text-3xl'>Crear proyecto</h1>
         <label name="titulo" className=''>Titulo</label>
         <input type="number" name="titulo"  className='border  border-gray-300 focus:outline-none focus:border-b-2 focus:border-b-purple-600 py-3 px-6 w-1/3 text-black'/>
