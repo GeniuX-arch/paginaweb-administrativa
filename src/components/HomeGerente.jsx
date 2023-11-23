@@ -34,7 +34,7 @@ export default function HomeGerente(){
 
         <div className="flex w-3/12  bg-slate-900 p-5 rounded-lg border border-slate-700">
           <div className="flex flex-col">
-            <Link className="bg-purple-600 text-white w-auto px-3 py-1 text-center mb-5" to={'/tareas/'+itemSelect}>Ver más detalles</Link>
+            <Link className="bg-purple-600 hover:bg-purple-900 text-white w-auto px-3 py-1 text-center mb-5" to={'/tareas/'+itemSelect}>Ver más detalles</Link>
             <h1 className="font-bold mb-3">{proyectos[itemSelect].nombre}</h1>
             <h1 className="font-bold">gerente:</h1>
           {empleados.map((value, index) => {
